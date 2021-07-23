@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "code-sharing-bucket"
+    bucket = "ci-cd-pipe-buckeet"
     key = "jt.tfstate"
     region = "us-west-2"
-    dynamodb_table = "tfstate"
+    dynamodb_table = "test-terraformDB"
   }
 }
